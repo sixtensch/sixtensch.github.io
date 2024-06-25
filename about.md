@@ -4,7 +4,7 @@ title: About
 key: page-about
 ---
 
-Just say something about yourself. :+1:
+Under construction.
 
 {% highlight c++ %}
 static f32 acc = 0.0f;
