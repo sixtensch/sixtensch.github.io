@@ -1,25 +1,15 @@
 ---
 layout: article
-titles:
-  en      : &EN       About
-  en-GB   : *EN
-  en-US   : *EN
-  en-CA   : *EN
-  en-AU   : *EN
-  zh-Hans : &ZH_HANS  关于
-  zh      : *ZH_HANS
-  zh-CN   : *ZH_HANS
-  zh-SG   : *ZH_HANS
-  zh-Hant : &ZH_HANT  關於
-  zh-TW   : *ZH_HANT
-  zh-HK   : *ZH_HANT
-  ko      : &KO       소개
-  ko-KR   : *KO
+title: About
 key: page-about
 ---
 
 Just say something about yourself. :+1:
 
-{% highlight javascript %}
-(() => console.log('hello, world!'))();
+{% highlight c++ %}
+static f32 acc = 0.0f;
+acc += 0.005f;
+f32 r = 0.75f + 0.25f * FSin(acc);
+c4f clearColor = { r, 0.8f, 1.0f, 1.0f };
+graphics->commandList->ClearRenderTargetView(cdh, (f32*)&clearColor, 0, nullptr);
 {% endhighlight %}
