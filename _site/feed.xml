@@ -1,5 +1,20 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-06-28T15:12:58+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Portfolio</title><subtitle>Your Site Description
-</subtitle><author><name>Your Name</name><email>sixtensch@gmail.com</email></author><entry><title type="html">Welcome</title><link href="http://localhost:4000/2024/06/25/welcome.html" rel="alternate" type="text/html" title="Welcome" /><published>2024-06-25T00:00:00+02:00</published><updated>2024-06-25T00:00:00+02:00</updated><id>http://localhost:4000/2024/06/25/welcome</id><content type="html" xml:base="http://localhost:4000/2024/06/25/welcome.html"><![CDATA[<p>Site is under construction! :construction:</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-10-09T00:53:06+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Developer Portfolio</title><subtitle>Summary of various software projects developed by Sixten Schelin, or (explicitly stated) those to which he has contributed.
+</subtitle><author><name>Your Name</name><email>sixtensch@gmail.com</email></author><entry><title type="html">TOOL and CHSL</title><link href="http://localhost:4000/2024/10/09/tool-chsl.html" rel="alternate" type="text/html" title="TOOL and CHSL" /><published>2024-10-09T00:00:00+02:00</published><updated>2024-10-09T00:00:00+02:00</updated><id>http://localhost:4000/2024/10/09/tool-chsl</id><content type="html" xml:base="http://localhost:4000/2024/10/09/tool-chsl.html"><![CDATA[<p>Two standard libraries for common use cases in C++, for projects that distance themselves from the monotlithic language standard libraries: TOOL being the newer <em>function oriented</em> library, and CHSL being the more fully featured legacy object-oriented one.</p>
+
+<p><img src="/assets/favicon-32x32.png" alt="Image" /></p>
+
+<!--
+You may want to [config the site](https://kitian616.github.io/jekyll-TeXt-theme/docs/en/configuration) or [writing a post](https://kitian616.github.io/jekyll-TeXt-theme/docs/en/writing-posts) next. Please feel free to [create an issue](https://github.com/kitian616/jekyll-TeXt-theme/issues) or [send me an email](mailto:kitian616@outlook.com) if you have any questions.
+-->
+
+<!--more-->
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">b8</span> <span class="n">complete</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+</code></pre></div></div>
+
+<hr />
+
+<p>Content coming soon.</p>]]></content><author><name>Your Name</name><email>sixtensch@gmail.com</email></author><category term="C++" /><category term="Library" /><summary type="html"><![CDATA[Two standard libraries for common use cases in C++, for projects that distance themselves from the monotlithic language standard libraries: TOOL being the newer function oriented library, and CHSL being the more fully featured legacy object-oriented one.]]></summary></entry><entry><title type="html">Welcome</title><link href="http://localhost:4000/2024/06/25/welcome.html" rel="alternate" type="text/html" title="Welcome" /><published>2024-06-25T00:00:00+02:00</published><updated>2024-06-25T00:00:00+02:00</updated><id>http://localhost:4000/2024/06/25/welcome</id><content type="html" xml:base="http://localhost:4000/2024/06/25/welcome.html"><![CDATA[<p>Site is under construction! :construction:</p>
 
 <!--
 You may want to [config the site](https://kitian616.github.io/jekyll-TeXt-theme/docs/en/configuration) or [writing a post](https://kitian616.github.io/jekyll-TeXt-theme/docs/en/writing-posts) next. Please feel free to [create an issue](https://github.com/kitian616/jekyll-TeXt-theme/issues) or [send me an email](mailto:kitian616@outlook.com) if you have any questions.
