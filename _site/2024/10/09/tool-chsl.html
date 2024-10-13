@@ -1,11 +1,10 @@
 <!DOCTYPE html><html lang="en">
   <head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"><title>Home - Developer Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"><title>TOOL and CHSL - Developer Portfolio</title>
 
-<meta name="description" content="Summary of various software projects developed by Sixten Schelin, or (explicitly stated) those to which he has contributed.
-">
-<link rel="canonical" href="http://localhost:4000/"><link rel="alternate" type="application/rss+xml" title="Developer Portfolio" href="/feed.xml"><link rel="icon" type="image/png" href="/assets/icon/favicon-48x48.png" sizes="48x48" />
+<meta name="description" content="Two kitchen sink standard libraries to cover the most common use cases and cut compile times in C++ game software.Made for projects that distance themselves ...">
+<link rel="canonical" href="http://localhost:4000/2024/10/09/tool-chsl.html"><link rel="alternate" type="application/rss+xml" title="Developer Portfolio" href="/feed.xml"><link rel="icon" type="image/png" href="/assets/icon/favicon-48x48.png" sizes="48x48" />
 <link rel="icon" type="image/svg+xml" href="/assets/icon/favicon.svg" />
 <link rel="shortcut icon" href="/assets/icon/favicon.ico" />
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/icon/apple-touch-icon.png" />
@@ -255,182 +254,129 @@
 </head>
   <body>
     <div class="root" data-is-touch="false">
-      <div class="layout--page js-page-root">
-<div class="page__main js-page-main page__viewport cell cell--auto">
+      <div class="layout--page js-page-root"><div class="page__main js-page-main page__viewport has-aside cell cell--auto">
 
-      <div class="page__main-inner">
-<div class="page__header d-print-none"><header class="header"><div class="main">
+      <div class="page__main-inner"><div class="page__header d-print-none"><header class="header"><div class="main">
       <div class="header__title">
-        <div class="header__brand">
-<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 384 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M297.2 248.9C311.6 228.3 320 203.2 320 176c0-70.7-57.3-128-128-128S64 105.3 64 176c0 27.2 8.4 52.3 22.8 72.9c3.7 5.3 8.1 11.3 12.8 17.7c0 0 0 0 0 0c12.9 17.7 28.3 38.9 39.8 59.8c10.4 19 15.7 38.8 18.3 57.5L109 384c-2.2-12-5.9-23.7-11.8-34.5c-9.9-18-22.2-34.9-34.5-51.8c0 0 0 0 0 0s0 0 0 0c-5.2-7.1-10.4-14.2-15.4-21.4C27.6 247.9 16 213.3 16 176C16 78.8 94.8 0 192 0s176 78.8 176 176c0 37.3-11.6 71.9-31.4 100.3c-5 7.2-10.2 14.3-15.4 21.4c0 0 0 0 0 0s0 0 0 0c-12.3 16.8-24.6 33.7-34.5 51.8c-5.9 10.8-9.6 22.5-11.8 34.5l-48.6 0c2.6-18.7 7.9-38.6 18.3-57.5c11.5-20.9 26.9-42.1 39.8-59.8c0 0 0 0 0 0s0 0 0 0s0 0 0 0c4.7-6.4 9-12.4 12.7-17.7zM192 128c-26.5 0-48 21.5-48 48c0 8.8-7.2 16-16 16s-16-7.2-16-16c0-44.2 35.8-80 80-80c8.8 0 16 7.2 16 16s-7.2 16-16 16zm0 384c-44.2 0-80-35.8-80-80l0-16 160 0 0 16c0 44.2-35.8 80-80 80z"></path></svg><a title="Summary of various software projects developed by Sixten Schelin, or (explicitly stated) those to which he has contributed.
+        <div class="header__brand"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M297.2 248.9C311.6 228.3 320 203.2 320 176c0-70.7-57.3-128-128-128S64 105.3 64 176c0 27.2 8.4 52.3 22.8 72.9c3.7 5.3 8.1 11.3 12.8 17.7c0 0 0 0 0 0c12.9 17.7 28.3 38.9 39.8 59.8c10.4 19 15.7 38.8 18.3 57.5L109 384c-2.2-12-5.9-23.7-11.8-34.5c-9.9-18-22.2-34.9-34.5-51.8c0 0 0 0 0 0s0 0 0 0c-5.2-7.1-10.4-14.2-15.4-21.4C27.6 247.9 16 213.3 16 176C16 78.8 94.8 0 192 0s176 78.8 176 176c0 37.3-11.6 71.9-31.4 100.3c-5 7.2-10.2 14.3-15.4 21.4c0 0 0 0 0 0s0 0 0 0c-12.3 16.8-24.6 33.7-34.5 51.8c-5.9 10.8-9.6 22.5-11.8 34.5l-48.6 0c2.6-18.7 7.9-38.6 18.3-57.5c11.5-20.9 26.9-42.1 39.8-59.8c0 0 0 0 0 0s0 0 0 0s0 0 0 0c4.7-6.4 9-12.4 12.7-17.7zM192 128c-26.5 0-48 21.5-48 48c0 8.8-7.2 16-16 16s-16-7.2-16-16c0-44.2 35.8-80 80-80c8.8 0 16 7.2 16 16s-7.2 16-16 16zm0 384c-44.2 0-80-35.8-80-80l0-16 160 0 0 16c0 44.2-35.8 80-80 80z"/></svg><a title="Summary of various software projects developed by Sixten Schelin, or (explicitly stated) those to which he has contributed.
 " href="/"><b>Sixten Schelin</b><!-- <br> -->
               <i><small>Portfolio</small></i></a>
-        </div>
-<button class="button button--secondary button--circle search-button js-search-toggle"><i class="fas fa-search"></i></button>
-</div>
-<nav class="navigation">
-        <ul>
-<li class="navigation__item"><a href="/archive.html">Archive</a></li>
-<li class="navigation__item"><a href="/about.html">About</a></li>
-<li><button class="button button--secondary button--circle search-button js-search-toggle"><i class="fas fa-search"></i></button></li>
-</ul>
-      </nav>
-</div>
-  </header></div>
-<div class="page__content"><div class="main"><div class="grid grid--reverse">
+        </div><button class="button button--secondary button--circle search-button js-search-toggle"><i class="fas fa-search"></i></button></div><nav class="navigation">
+        <ul><li class="navigation__item"><a href="/archive.html">Archive</a></li><li class="navigation__item"><a href="/about.html">About</a></li><li><button class="button button--secondary button--circle search-button js-search-toggle"><i class="fas fa-search"></i></button></li></ul>
+      </nav></div>
+  </header></div><div class="page__content"><div class ="main"><div class="grid grid--reverse">
 
-              <div class="col-aside d-print-none js-col-aside"></div>
+              <div class="col-aside d-print-none js-col-aside"><aside class="page__aside js-page-aside"><div class="toc-aside js-toc-root"></div>
+</aside></div>
 
-              <div class="col-main cell cell--auto">
-<!-- start custom main top snippet -->
+              <div class="col-main cell cell--auto"><!-- start custom main top snippet -->
 
 <!-- end custom main top snippet -->
-<article itemscope itemtype="http://schema.org/WebPage"><header style="display:none;"><h1>Home</h1></header><meta itemprop="headline" content="Home">
-<meta itemprop="author" content="Sixten Schelin">
-<div class="js-article-content">
-<div class="layout--articles">
-<div class="article-list items items--divided">
-<article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__image" style="margin-left:auto; margin-right:auto;">
-            <div style="margin-left:20px; margin-right:20px;margin-bottom: 14px;">
-<!-- <head>
-                <style>
-                .image--wide {
-                  width: map-get($image, width-lg);
-                }
-                </style>
-              </head> -->
-              <img class="image image--sm" style="border-radius:20%;" src="/assets/jiji.png">
-</div>
-          </div>
-<div class="item__content">
-          <header>
-            <!-- <div style="clear: both"> -->
-              <!-- <ul class="left-col menu" style="float: right; position: static; bottom: 0px"><li>
-                    <a class="button button--secondary button--pill button--sm"
-                      href="/?tag=C%2B%2B">C++</a>
-                  </li><li>
-                    <a class="button button--secondary button--pill button--sm"
-                      href="/?tag=Library">Library</a>
-                  </li></ul> -->
+<article itemscope itemtype="http://schema.org/Article"><div class="article__header"><header><h1>TOOL and CHSL</h1></header></div><meta itemprop="headline" content="TOOL and CHSL"><div class="article__info clearfix"><ul class="left-col menu"><li>
+              <a class="button button--secondary button--pill button--sm"
+                href="/archive.html?tag=C%2B%2B">C++</a>
+            </li><li>
+              <a class="button button--secondary button--pill button--sm"
+                href="/archive.html?tag=Library">Library</a>
+            </li></ul><ul class="right-col menu"></ul></div><meta itemprop="author" content="Sixten Schelin"/><meta itemprop="datePublished" content="2024-10-09T00:00:00+02:00">
+    <meta itemprop="keywords" content="C++,Library"><div class="js-article-content"><div class="layout--article"><!-- start custom article top snippet -->
 
-              <a href="/2024/10/09/tool-chsl.html"><h2 itemprop="headline" class="item__header" style="margin-top: -14px;">TOOL and CHSL</h2></a>
-            <!-- </div> -->
-          </header>
-          <div class="item__description">
-<div class="article__content" itemprop="description articleBody">Two kitchen sink standard libraries to cover the most common use cases and cut compile times in C++ game software.
+<!-- end custom article top snippet -->
+<div class="article__content" itemprop="articleBody"><p>Two kitchen sink <b>standard libraries</b> to cover the most common use cases and cut compile times in C++ game software.</p>
 
-Made for projects that distance themselves from the monolithic language standard libraries, these two standard libraries are built for simplicity and real usability in game software. Among these two, TOOL is the newer function orie...</div>
-<p><a href="/2024/10/09/tool-chsl.html">Read more</a></p>
+<p>Made for projects that distance themselves from the monolithic language standard libraries, these two standard libraries are built for simplicity and real usability in game software. Among these two, TOOL is the newer <em>function oriented</em> library, with CHSL being a more fully featured <em>object-oriented</em> one. In recognizing that good low-level software strives to be simple to maintain both performance and modifiability, TOOL and CHSL aim to break down the most common and useful software tools into digestible interfaces.</p>
+
+<div style="display: flex; align-items: center; margin-right: 10px;">
+<img src="/assets/github-mark.svg" style="height: 30px; margin-right: 10px;" />
+<a class="button button--secondary button--rounded button--lg" href="https://github.com/crazysissen/TOOL" style="margin-right: 10px;">
+TOOL on GitHub
+</a>
+<a class="button button--secondary button--rounded button--lg" href="https://github.com/crazysissen/CHSL" style="margin-right: 10px;">
+CHSL on GitHub
+</a>
 </div>
-<div class="article__info clearfix">
-<ul class="left-col menu">
-<li>
-              <a class="button button--secondary button--pill button--sm" href="/archive.html?tag=C%2B%2B">C++</a>
-            </li>
-<li>
-              <a class="button button--secondary button--pill button--sm" href="/archive.html?tag=Library">Library</a>
-            </li>
+
+<hr />
+
+<!--more-->
+
+<h2 id="tool">TOOL</h2>
+
+<p>The <em>Tired-Of-Objects Library</em>, or <em>TOOL</em>, is a constantly evolving multi-platform function-oriented standard library built for performance, simplicity, and flexibility. The library was born out of dissatisfaction with much of modern object-oriented design, along with the massive C++ standard libraries that follow. From these feelings spring a desire for something better, and more suited to my needs and the needs of my peers.</p>
+
+<p>Headers are intentionally built <strong>short</strong>, <strong>simple</strong>, and <strong>straight-forward</strong>. This works in a low-level software developer’s favor for a number of reasons.</p>
+
+<ul>
+  <li>It cuts down the horrendous compile times often experienced with the humongous templated C++ standard library includes to near-zero. Wanting a translation unit to act on a string of text should not require an extra second on every compile.</li>
+  <li>It simplifies error logging, as functionality is more specific and less templated. The smallest perceivable error in a call to <code class="language-plaintext highlighter-rouge">std::format</code> or <code class="language-plaintext highlighter-rouge">std::regex_search</code> can produce a short novel for you to read through, a waste of time if there ever was one.</li>
+  <li>It self-documents the functionality through a legible and digestible interface. Following a <code class="language-plaintext highlighter-rouge">#include &lt;string&gt;</code> link to the source file seldom provides enlightenment on anything. Well-designed code can benefit from, but should not <em>require</em>, extensive commenting or documentation to be comprehensible.</li>
+  <li>It breaks down the humongous array of esoteric utilities made available through large modern standard libraries into the most core constituent parts. Performance-oriented programmers strive to optimize their software and understand its workings, not pray to higher powers that the standard library becomes the bottleneck.</li>
 </ul>
-<ul class="right-col menu"></ul>
-</div>
-<meta itemprop="author" content="Sixten Schelin">
-<meta itemprop="datePublished" content="2024-10-09T00:00:00+02:00">
-    <meta itemprop="keywords" content="C++,Library">
-</div>
-      </article><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__content">
-          <header>
-            <!-- <div style="clear: both"> -->
-              <!-- <ul class="left-col menu" style="float: right; position: static; bottom: 0px"><li>
-                    <a class="button button--secondary button--pill button--sm"
-                      href="/archive.html?tag=Project">Project</a>
-                  </li><li>
-                    <a class="button button--secondary button--pill button--sm"
-                      href="/archive.html?tag=C%2B%2B">C++</a>
-                  </li></ul> -->
+</div><div class="d-print-none"><footer class="article__footer"><meta itemprop="dateModified" content="2024-10-09T00:00:00+02:00"><!-- start custom article footer snippet -->
 
-              <a href="/2024/06/25/welcome.html"><h2 itemprop="headline" class="item__header" style="margin-top: -14px;">Welcome</h2></a>
-            <!-- </div> -->
-          </header>
-          <div class="item__description">
-<div class="article__content" itemprop="description articleBody">Site is under construction! <img class="emoji" title=":construction:" alt=":construction:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f6a7.png" height="20" width="20">
-</div>
-<p><a href="/2024/06/25/welcome.html">Read more</a></p>
-</div>
-<div class="article__info clearfix">
-<ul class="left-col menu">
-<li>
-              <a class="button button--secondary button--pill button--sm" href="/archive.html?tag=Project">Project</a>
-            </li>
-<li>
-              <a class="button button--secondary button--pill button--sm" href="/archive.html?tag=C%2B%2B">C++</a>
-            </li>
-</ul>
-<ul class="right-col menu"></ul>
-</div>
-<meta itemprop="author" content="Sixten Schelin">
-<meta itemprop="datePublished" content="2024-06-25T00:00:00+02:00">
-    <meta itemprop="keywords" content="Project,C++">
-</div>
-      </article>
-</div>
-</div>
-<div class="layout--home"></div>
-<script>/*(function () {
+<!-- end custom article footer snippet -->
+</footer>
+<div class="article__section-navigator clearfix"><div class="previous"><span>PREVIOUS</span><a href="/2024/06/25/welcome.html">Welcome</a></div></div></div>
 
-})();*/
+</div>
+
+<script>(function() {
+  var SOURCES = window.TEXT_VARIABLES.sources;
+  window.Lazyload.js(SOURCES.jquery, function() {
+    $(function() {
+      var $this ,$scroll;
+      var $articleContent = $('.js-article-content');
+      var hasSidebar = $('.js-page-root').hasClass('layout--page--sidebar');
+      var scroll = hasSidebar ? '.js-page-main' : 'html, body';
+      $scroll = $(scroll);
+
+      $articleContent.find('.highlight').each(function() {
+        $this = $(this);
+        $this.attr('data-lang', $this.find('code').attr('data-lang'));
+      });
+      $articleContent.find('h1[id], h2[id], h3[id], h4[id], h5[id], h6[id]').each(function() {
+        $this = $(this);
+        $this.append($('<a class="anchor d-print-none" aria-hidden="true"></a>').html('<i class="fas fa-anchor"></i>'));
+      });
+      $articleContent.on('click', '.anchor', function() {
+        $scroll.scrollToAnchor('#' + $(this).parent().attr('id'), 400);
+      });
+    });
+  });
+})();
 </script>
-
-
-
-</div>
-<section class="page__comments d-print-none"></section></article><!-- start custom main bottom snippet -->
+</div><section class="page__comments d-print-none"></section></article><!-- start custom main bottom snippet -->
 
 <!-- end custom main bottom snippet -->
 </div>
-            </div></div></div>
-<div class="page__footer d-print-none">
+            </div></div></div><div class="page__footer d-print-none">
 <footer class="footer py-4 js-page-footer">
-    <div class="main">
-<div itemscope itemtype="http://schema.org/Person">
-        <meta itemprop="name" content="Sixten Schelin">
-<meta itemprop="url" content="/">
-<meta itemprop="description" content="I am enough.">
-<div class="footer__author-links">
-<div class="author-links">
-  <ul class="menu menu--nowrap menu--inline">
-<li title="Send me an Email.">
+    <div class="main"><div itemscope itemtype="http://schema.org/Person">
+        <meta itemprop="name" content="Sixten Schelin"><meta itemprop="url" content="/"><meta itemprop="description" content="I am enough."><div class="footer__author-links"><div class="author-links">
+  <ul class="menu menu--nowrap menu--inline"><li title="Send me an Email.">
       <a class="button button--circle mail-button" itemprop="email" href="mailto:sixtensch@gmail.com" target="_blank">
         <i class="fas fa-envelope"></i>
-      </a>
-</li>
-<li title="Follow me on Linkedin.">
+      </a><li title="Follow me on Linkedin.">
         <a class="button button--circle linkedin-button" itemprop="sameAs" href="https://www.linkedin.com/in/sixten-schelin" target="_blank">
-          <div class="icon">
-<svg fill="#000000" width="24px" height="24px" viewbox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
-  <path d="M260.096 155.648c0 27.307008-9.899008 50.516992-29.696 69.632-19.796992 19.115008-45.396992 28.672-76.8 28.672-30.036992 0-54.612992-9.556992-73.728-28.672-19.115008-19.115008-28.672-42.324992-28.672-69.632 0-28.672 9.556992-52.224 28.672-70.656 19.115008-18.432 44.372992-27.648 75.776-27.648 31.403008 0 56.32 9.216 74.752 27.648 18.432 18.432 28.331008 41.984 29.696 70.656 0 0 0 0 0 0m-202.752 808.96c0 0 0-632.832 0-632.832 0 0 196.608 0 196.608 0 0 0 0 632.832 0 632.832 0 0-196.608 0-196.608 0 0 0 0 0 0 0m313.344-430.08c0-58.708992-1.364992-126.292992-4.096-202.752 0 0 169.984 0 169.984 0 0 0 10.24 88.064 10.24 88.064 0 0 4.096 0 4.096 0 40.96-68.267008 105.812992-102.4 194.56-102.4 68.267008 0 123.220992 22.868992 164.864 68.608 41.643008 45.739008 62.464 113.664 62.464 203.776 0 0 0 374.784 0 374.784 0 0-196.608 0-196.608 0 0 0 0-350.208 0-350.208 0-91.476992-33.451008-137.216-100.352-137.216-47.787008 0-81.236992 24.576-100.352 73.728-4.096 8.192-6.144 24.576-6.144 49.152 0 0 0 364.544 0 364.544 0 0-198.656 0-198.656 0 0 0 0-430.08 0-430.08 0 0 0 0 0 0"></path>
+          <div class="icon"><svg fill="#000000" width="24px" height="24px" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M260.096 155.648c0 27.307008-9.899008 50.516992-29.696 69.632-19.796992 19.115008-45.396992 28.672-76.8 28.672-30.036992 0-54.612992-9.556992-73.728-28.672-19.115008-19.115008-28.672-42.324992-28.672-69.632 0-28.672 9.556992-52.224 28.672-70.656 19.115008-18.432 44.372992-27.648 75.776-27.648 31.403008 0 56.32 9.216 74.752 27.648 18.432 18.432 28.331008 41.984 29.696 70.656 0 0 0 0 0 0m-202.752 808.96c0 0 0-632.832 0-632.832 0 0 196.608 0 196.608 0 0 0 0 632.832 0 632.832 0 0-196.608 0-196.608 0 0 0 0 0 0 0m313.344-430.08c0-58.708992-1.364992-126.292992-4.096-202.752 0 0 169.984 0 169.984 0 0 0 10.24 88.064 10.24 88.064 0 0 4.096 0 4.096 0 40.96-68.267008 105.812992-102.4 194.56-102.4 68.267008 0 123.220992 22.868992 164.864 68.608 41.643008 45.739008 62.464 113.664 62.464 203.776 0 0 0 374.784 0 374.784 0 0-196.608 0-196.608 0 0 0 0-350.208 0-350.208 0-91.476992-33.451008-137.216-100.352-137.216-47.787008 0-81.236992 24.576-100.352 73.728-4.096 8.192-6.144 24.576-6.144 49.152 0 0 0 364.544 0 364.544 0 0-198.656 0-198.656 0 0 0 0-430.08 0-430.08 0 0 0 0 0 0" />
 </svg>
 </div>
         </a>
-      </li>
-<li title="Follow me on Github.">
+      </li><li title="Follow me on Github.">
         <a class="button button--circle github-button" itemprop="sameAs" href="https://github.com/crazysissen" target="_blank">
-          <div class="icon">
-<svg fill="#000000" width="24px" height="24px" viewbox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
-  <path class="svgpath" data-index="path_0" fill="#272636" d="M0 525.2c0 223.6 143.3 413.7 343 483.5 26.9 6.8 22.8-12.4 22.8-25.4l0-88.7c-155.3 18.2-161.5-84.6-172-101.7-21.1-36-70.8-45.2-56-62.3 35.4-18.2 71.4 4.6 113.1 66.3 30.2 44.7 89.1 37.2 119 29.7 6.5-26.9 20.5-50.9 39.7-69.6C248.8 728.2 181.7 630 181.7 513.2c0-56.6 18.7-108.7 55.3-150.7-23.3-69.3 2.2-128.5 5.6-137.3 66.5-6 135.5 47.6 140.9 51.8 37.8-10.2 80.9-15.6 129.1-15.6 48.5 0 91.8 5.6 129.8 15.9 12.9-9.8 77-55.8 138.8-50.2 3.3 8.8 28.2 66.7 6.3 135 37.1 42.1 56 94.6 56 151.4 0 117-67.5 215.3-228.8 243.7 26.9 26.6 43.6 63.4 43.6 104.2l0 128.8c0.9 10.3 0 20.5 17.2 20.5C878.1 942.4 1024 750.9 1024 525.3c0-282.9-229.3-512-512-512C229.1 13.2 0 242.3 0 525.2L0 525.2z"></path>
+          <div class="icon"><svg fill="#000000" width="24px" height="24px" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path class="svgpath" data-index="path_0" fill="#272636" d="M0 525.2c0 223.6 143.3 413.7 343 483.5 26.9 6.8 22.8-12.4 22.8-25.4l0-88.7c-155.3 18.2-161.5-84.6-172-101.7-21.1-36-70.8-45.2-56-62.3 35.4-18.2 71.4 4.6 113.1 66.3 30.2 44.7 89.1 37.2 119 29.7 6.5-26.9 20.5-50.9 39.7-69.6C248.8 728.2 181.7 630 181.7 513.2c0-56.6 18.7-108.7 55.3-150.7-23.3-69.3 2.2-128.5 5.6-137.3 66.5-6 135.5 47.6 140.9 51.8 37.8-10.2 80.9-15.6 129.1-15.6 48.5 0 91.8 5.6 129.8 15.9 12.9-9.8 77-55.8 138.8-50.2 3.3 8.8 28.2 66.7 6.3 135 37.1 42.1 56 94.6 56 151.4 0 117-67.5 215.3-228.8 243.7 26.9 26.6 43.6 63.4 43.6 104.2l0 128.8c0.9 10.3 0 20.5 17.2 20.5C878.1 942.4 1024 750.9 1024 525.3c0-282.9-229.3-512-512-512C229.1 13.2 0 242.3 0 525.2L0 525.2z" />
 </svg>
 </div>
         </a>
-      </li>
-</ul>
+      </li></ul>
 </div>
 </div>
       </div>
     </div>
-  </footer>
-</div>
-</div>
-    </div>
-<script>(function() {
+  </footer></div></div>
+    </div><script>(function() {
   var SOURCES = window.TEXT_VARIABLES.sources;
   window.Lazyload.js(SOURCES.jquery, function() {
     var $body = $('body'), $window = $(window);
@@ -494,8 +440,7 @@ Made for projects that distance themselves from the monolithic language standard
     $.fn.modal = modal;
   });
 })();
-</script><div class="modal modal--overflow page__search-modal d-print-none js-page-search-modal">
-<script>
+</script><div class="modal modal--overflow page__search-modal d-print-none js-page-search-modal"><script>
 (function () {
   var SOURCES = window.TEXT_VARIABLES.sources;
   window.Lazyload.js(SOURCES.jquery, function() {
@@ -587,7 +532,7 @@ Made for projects that distance themselves from the monolithic language standard
     <div class="search-bar">
       <div class="search-box js-search-box">
         <div class="search-box__icon-search"><i class="fas fa-search"></i></div>
-        <input type="text">
+        <input type="text" />
         <div class="search-box__icon-clear js-icon-clear">
           <a><i class="fas fa-times"></i></a>
         </div>
@@ -711,8 +656,7 @@ window.Lazyload.js([SOURCES.jquery, PAHTS.search_js], function() {
   });
 });
 </script>
-</div>
-</div>
+</div></div>
 
 
 <script>(function() {
@@ -949,6 +893,68 @@ window.Lazyload.js([SOURCES.jquery, PAHTS.search_js], function() {
 /*(function () {
 
 })();*/
+</script><script>
+  /* toc must before affix, since affix need to konw toc' height. */(function() {
+  var SOURCES = window.TEXT_VARIABLES.sources;
+  var TOC_SELECTOR = window.TEXT_VARIABLES.site.toc.selectors;
+  window.Lazyload.js(SOURCES.jquery, function() {
+    var $window = $(window);
+    var $articleContent = $('.js-article-content');
+    var $tocRoot = $('.js-toc-root'), $col2 = $('.js-col-aside');
+    var toc;
+    var tocDisabled = false;
+    var hasSidebar = $('.js-page-root').hasClass('layout--page--sidebar');
+    var hasToc = $articleContent.find(TOC_SELECTOR).length > 0;
+
+    function disabled() {
+      return $col2.css('display') === 'none' || !hasToc;
+    }
+
+    tocDisabled = disabled();
+
+    toc = $tocRoot.toc({
+      selectors: TOC_SELECTOR,
+      container: $articleContent,
+      scrollTarget: hasSidebar ? '.js-page-main' : null,
+      scroller: hasSidebar ? '.js-page-main' : null,
+      disabled: tocDisabled
+    });
+
+    $window.on('resize', window.throttle(function() {
+      tocDisabled = disabled();
+      toc && toc.setOptions({
+        disabled: tocDisabled
+      });
+    }, 100));
+
+  });
+})();
+(function() {
+  var SOURCES = window.TEXT_VARIABLES.sources;
+  window.Lazyload.js(SOURCES.jquery, function() {
+    var $window = $(window), $pageFooter = $('.js-page-footer');
+    var $pageAside = $('.js-page-aside');
+    var affix;
+    var tocDisabled = false;
+    var hasSidebar = $('.js-page-root').hasClass('layout--page--sidebar');
+
+    affix = $pageAside.affix({
+      offsetBottom: $pageFooter.outerHeight(),
+      scrollTarget: hasSidebar ? '.js-page-main' : null,
+      scroller: hasSidebar ? '.js-page-main' : null,
+      scroll: hasSidebar ? $('.js-page-main').children() : null,
+      disabled: tocDisabled
+    });
+
+    $window.on('resize', window.throttle(function() {
+      affix && affix.setOptions({
+        disabled: tocDisabled
+      });
+    }, 100));
+
+    window.pageAsideAffix = affix;
+  });
+})();
 </script>
     </div>
     <script>(function () {
