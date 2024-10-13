@@ -8,12 +8,18 @@
     <div class="main">
       <div class="header__title">
         <div class="header__brand">
-          {%- include svg/icon/social/github.svg -%}
+          {%- include svg/logo.svg -%}
           {%- assign _paths_root = site.paths.root | default: site.data.variables.default.paths.root  -%}
           {%- include snippets/get-nav-url.html path=_paths_root -%}
-          {%- if site.header_title -%}
-            <a title="{%- if site.description -%}{{ site.description }}{%- endif -%}" href="{{ __return }}">{{ site.header_title }}</a>
-          {%- endif -%}
+          <a title="{%- if site.description -%}{{ site.description }}{%- endif -%}" href="{{ __return }}">
+              {%- if site.header_title -%}
+              {{ site.header_title }}
+              {%- endif -%}
+              {%- if site.header_subtitle -%}
+              <!-- <br> -->
+              {{ site.header_subtitle }}
+              {%- endif -%}
+            </a>
         </div>
         {%- if site.search.provider -%}
           <button class="button button--secondary button--circle search-button js-search-toggle"><i class="fas fa-search"></i></button>

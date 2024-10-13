@@ -1,7 +1,34 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-10-09T00:53:06+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Developer Portfolio</title><subtitle>Summary of various software projects developed by Sixten Schelin, or (explicitly stated) those to which he has contributed.
-</subtitle><author><name>Your Name</name><email>sixtensch@gmail.com</email></author><entry><title type="html">TOOL and CHSL</title><link href="http://localhost:4000/2024/10/09/tool-chsl.html" rel="alternate" type="text/html" title="TOOL and CHSL" /><published>2024-10-09T00:00:00+02:00</published><updated>2024-10-09T00:00:00+02:00</updated><id>http://localhost:4000/2024/10/09/tool-chsl</id><content type="html" xml:base="http://localhost:4000/2024/10/09/tool-chsl.html"><![CDATA[<p>Two standard libraries for common use cases in C++, for projects that distance themselves from the monotlithic language standard libraries: TOOL being the newer <em>function oriented</em> library, and CHSL being the more fully featured legacy object-oriented one.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-10-13T13:57:31+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Developer Portfolio</title><subtitle>Summary of various software projects developed by Sixten Schelin, or (explicitly stated) those to which he has contributed.
+</subtitle><author><name>Sixten Schelin</name><email>sixtensch@gmail.com</email></author><entry><title type="html">TOOL and CHSL</title><link href="http://localhost:4000/2024/10/09/tool-chsl.html" rel="alternate" type="text/html" title="TOOL and CHSL" /><published>2024-10-09T00:00:00+02:00</published><updated>2024-10-09T00:00:00+02:00</updated><id>http://localhost:4000/2024/10/09/tool-chsl</id><content type="html" xml:base="http://localhost:4000/2024/10/09/tool-chsl.html"><![CDATA[<p>Two kitchen sink <b>standard libraries</b> to cover the most common use cases and cut compile times in C++ game software.</p>
 
-<p><img src="/assets/favicon-32x32.png" alt="Image" /></p>
+<p>Made for projects that distance themselves from the monolithic language standard libraries, these two standard libraries are built for simplicity and real usability in game software. Among these two, TOOL is the newer <em>function oriented</em> library, with CHSL being a more fully featured <em>object-oriented</em> one. In recognizing that good low-level software strives to be simple to maintain both performance and modifiability, TOOL and CHSL aim to break down the most common and useful software tools into digestible interfaces.</p>
+
+<div style="display: flex; align-items: center; margin-right: 10px;">
+<img src="/assets/github-mark.svg" style="height: 30px; margin-right: 10px;" />
+<a class="button button--secondary button--rounded button--lg" href="https://github.com/crazysissen/TOOL" style="margin-right: 10px;">
+TOOL on GitHub
+</a>
+<a class="button button--secondary button--rounded button--lg" href="https://github.com/crazysissen/CHSL" style="margin-right: 10px;">
+CHSL on GitHub
+</a>
+</div>
+
+<hr />
+
+<!--more-->
+
+<h2 id="tool">TOOL</h2>
+
+<p>The <em>Tired-Of-Objects Library</em>, or <em>TOOL</em>, is a constantly evolving multi-platform function-oriented standard library built for performance, simplicity, and flexibility. The library was born out of dissatisfaction with much of modern object-oriented design, along with the massive C++ standard libraries that follow. From these feelings spring a desire for something better, and more suited to my needs and the needs of my peers.</p>
+
+<p>Headers are intentionally built <strong>short</strong>, <strong>simple</strong>, and <strong>straight-forward</strong>. This works in a low-level software developer’s favor for a number of reasons.</p>
+
+<ul>
+  <li>It cuts down the horrendous compile times often experienced with the humongous templated C++ standard library includes to near-zero. Wanting a translation unit to act on a string of text should not require an extra second on every compile.</li>
+  <li>It simplifies error logging, as functionality is more specific and less templated. The smallest perceivable error in a call to <code class="language-plaintext highlighter-rouge">std::format</code> or <code class="language-plaintext highlighter-rouge">std::regex_search</code> can produce a short novel for you to read through, a waste of time if there ever was one.</li>
+  <li>It self-documents the functionality through a legible and digestible interface. Following a <code class="language-plaintext highlighter-rouge">#include &lt;string&gt;</code> link to the source file seldom provides enlightenment on anything. Well-designed code can benefit from, but should not <em>require</em>, extensive commenting or documentation to be comprehensible.</li>
+  <li>It breaks down the humongous array of esoteric utilities made available through large modern standard libraries into the most core constituent parts. Performance-oriented programmers strive to optimize their software and understand its workings, not pray to higher powers that the standard library becomes the bottleneck.</li>
+</ul>]]></content><author><name>Sixten Schelin</name><email>sixtensch@gmail.com</email></author><category term="C++" /><category term="Library" /><summary type="html"><![CDATA[Two kitchen sink standard libraries to cover the most common use cases and cut compile times in C++ game software. Made for projects that distance themselves from the monolithic language standard libraries, these two standard libraries are built for simplicity and real usability in game software. Among these two, TOOL is the newer function oriented library, with CHSL being a more fully featured object-oriented one. In recognizing that good low-level software strives to be simple to maintain both performance and modifiability, TOOL and CHSL aim to break down the most common and useful software tools into digestible interfaces. TOOL on GitHub CHSL on GitHub]]></summary></entry><entry><title type="html">Welcome</title><link href="http://localhost:4000/2024/06/25/welcome.html" rel="alternate" type="text/html" title="Welcome" /><published>2024-06-25T00:00:00+02:00</published><updated>2024-06-25T00:00:00+02:00</updated><id>http://localhost:4000/2024/06/25/welcome</id><content type="html" xml:base="http://localhost:4000/2024/06/25/welcome.html"><![CDATA[<p>Site is under construction! :construction:</p>
 
 <!--
 You may want to [config the site](https://kitian616.github.io/jekyll-TeXt-theme/docs/en/configuration) or [writing a post](https://kitian616.github.io/jekyll-TeXt-theme/docs/en/writing-posts) next. Please feel free to [create an issue](https://github.com/kitian616/jekyll-TeXt-theme/issues) or [send me an email](mailto:kitian616@outlook.com) if you have any questions.
@@ -14,17 +41,4 @@ You may want to [config the site](https://kitian616.github.io/jekyll-TeXt-theme/
 
 <hr />
 
-<p>Content coming soon.</p>]]></content><author><name>Your Name</name><email>sixtensch@gmail.com</email></author><category term="C++" /><category term="Library" /><summary type="html"><![CDATA[Two standard libraries for common use cases in C++, for projects that distance themselves from the monotlithic language standard libraries: TOOL being the newer function oriented library, and CHSL being the more fully featured legacy object-oriented one.]]></summary></entry><entry><title type="html">Welcome</title><link href="http://localhost:4000/2024/06/25/welcome.html" rel="alternate" type="text/html" title="Welcome" /><published>2024-06-25T00:00:00+02:00</published><updated>2024-06-25T00:00:00+02:00</updated><id>http://localhost:4000/2024/06/25/welcome</id><content type="html" xml:base="http://localhost:4000/2024/06/25/welcome.html"><![CDATA[<p>Site is under construction! :construction:</p>
-
-<!--
-You may want to [config the site](https://kitian616.github.io/jekyll-TeXt-theme/docs/en/configuration) or [writing a post](https://kitian616.github.io/jekyll-TeXt-theme/docs/en/writing-posts) next. Please feel free to [create an issue](https://github.com/kitian616/jekyll-TeXt-theme/issues) or [send me an email](mailto:kitian616@outlook.com) if you have any questions.
--->
-
-<!--more-->
-
-<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">b8</span> <span class="n">complete</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
-</code></pre></div></div>
-
-<hr />
-
-<p>Content coming soon.</p>]]></content><author><name>Your Name</name><email>sixtensch@gmail.com</email></author><category term="Project" /><category term="C++" /><summary type="html"><![CDATA[Site is under construction! :construction:]]></summary></entry></feed>
+<p>Content coming soon.</p>]]></content><author><name>Sixten Schelin</name><email>sixtensch@gmail.com</email></author><category term="Project" /><category term="C++" /><summary type="html"><![CDATA[Site is under construction! :construction:]]></summary></entry></feed>

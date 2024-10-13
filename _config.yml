@@ -21,7 +21,8 @@ highlight_theme: tomorrow-night-eighties # "default" (default), "tomorrow", "tom
 url     : https://www.crazysissen.github.io # the base hostname & protocol for your site e.g. https://www.someone.com
 baseurl : # does not include hostname
 title   : Developer Portfolio
-header_title: "<p><b>Sixten Schelin</b>: <i>Developer Portfolio</i></p>"
+header_title: "<b>Sixten Schelin</b>"
+header_subtitle: "<i><small>Portfolio</small></i>"
 show_date : false
 description: > # this means to ignore newlines until "Language & timezone"
   Summary of various software projects developed by Sixten Schelin, or (explicitly stated) those to which he has contributed.
@@ -37,7 +38,7 @@ timezone: # see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones for
 ##############################
 author:
   type      : # "person" (default), "organization"
-  name      : Your Name
+  name      : Sixten Schelin
   url       :
   avatar    : # path or url of avatar image (square)
   bio       : I am enough.
@@ -198,6 +199,7 @@ exclude:
   - jekyll-text-theme.gemspec
   - package-lock.json
   - package.json
+  - notes.md
   - /docs
   - /node_modules
   - /screenshots

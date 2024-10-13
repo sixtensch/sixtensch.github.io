@@ -5,3 +5,7 @@ gem "jekyll-text-theme"
 
 gem "tzinfo-data"
 
+# Phasing out from the standard library
+gem "csv"
+gem "ostruct"
+#gem "fiddle"
