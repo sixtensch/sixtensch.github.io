@@ -23,9 +23,8 @@ baseurl : # does not include hostname
 title   : Developer Portfolio
 header_title: "<b>Sixten Schelin</b>"
 header_subtitle: "<i><small>Portfolio</small></i>"
-show_date : false
 description: > # this means to ignore newlines until "Language & timezone"
-  Summary of various software projects developed by Sixten Schelin, or (explicitly stated) those to which he has contributed.
+  My software portfolio.
 
 
 ## => Language and Timezone
@@ -214,11 +213,11 @@ defaults:
       layout: article
       sharing: false
       license: false
-      aside:
-        toc: true
+      aside: false
       show_edit_on_github: false
       show_subscribe: false
       pageview: true
+      show_date : false
 
 
 ## => Plugins

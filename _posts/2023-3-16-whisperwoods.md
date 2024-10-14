@@ -1,7 +1,7 @@
 ---
 title: Whisperwoods
 tags: C++ Game Engine Team CHSL
-cover: "/assets/whisperwoods-2.png"
+cover: "/assets/whisperwoods-3.png"
 ---
 
 A **video game** and **engine** built from scratch in six weeks as a university group project 
@@ -13,7 +13,7 @@ Representing the culmination of our first three years in university, Whisperwood
 <div style="display: flex; align-items: center; margin-right: 10px;">
 <img src="/assets/github-mark.svg" style="height: 30px; margin-right: 10px;"/>
 <a class="button button--secondary button--rounded button--lg" href="https://github.com/sixtensch/Whisperwoods" style="margin-right: 10px;">
-<b>Whisperwoods</b> on GitHub
+Whisperwoodson GitHub
 </a>
 </div>
 
@@ -32,3 +32,5 @@ Of course, I was not the totality of the development group. These are my contrib
 - Contributions to core software architecture
 - Build system configuration and build automation
 - Music and iconography
+
+<img class="image image--lg" src="/assets/whisperwoods-poster.png" style="display: flex; margin-left:auto; margin-right:auto;"/>

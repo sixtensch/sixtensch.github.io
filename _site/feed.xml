@@ -1,37 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-10-14T10:57:30+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Developer Portfolio</title><subtitle>Summary of various software projects developed by Sixten Schelin, or (explicitly stated) those to which he has contributed.
-</subtitle><author><name>Sixten Schelin</name><email>sixtensch@gmail.com</email></author><entry><title type="html">Whisperwoods</title><link href="http://localhost:4000/2024/10/11/whisperwoods.html" rel="alternate" type="text/html" title="Whisperwoods" /><published>2024-10-11T00:00:00+02:00</published><updated>2024-10-11T00:00:00+02:00</updated><id>http://localhost:4000/2024/10/11/whisperwoods</id><content type="html" xml:base="http://localhost:4000/2024/10/11/whisperwoods.html"><![CDATA[<p>A <strong>video game</strong> and <strong>engine</strong> built from scratch in six weeks as a university group project</p>
-
-<!--more-->
-
-<p>Representing the culmination of our first three years in university, Whisperwoods shows off many facets of video game tech, rendering, creative optimization, and software engineering. Developed with little integration of external software libraries, the game features a renderer built from scratch using DirectX 11, custom resource asset formats, procedural world generation, and fast-paced strategic stealth gameplay, all optimized to run smoothly on very rudimentary hardware.</p>
-
-<div style="display: flex; align-items: center; margin-right: 10px;">
-<img src="/assets/github-mark.svg" style="height: 30px; margin-right: 10px;" />
-<a class="button button--secondary button--rounded button--lg" href="https://github.com/sixtensch/Whisperwoods" style="margin-right: 10px;">
-<b>Whisperwoods</b> on GitHub
-</a>
-</div>
-
-<hr />
-
-<div style="width: 80%; margin-left: auto; margin-right: auto;"><div class="extensions extensions--video">
-  <iframe src="https://www.youtube.com/embed/jSfU6uw6qy8?rel=0&amp;showinfo=0" frameborder="0" scrolling="no" allowfullscreen=""></iframe>
-</div>
-</div>
-
-<p>The team, consisting of six developers specialized and interested in different things, synergized to build a fairly well-rounded game engine. The software features and gameplay overview are demonstrated in an early build trailer available on YouTube.</p>
-
-<p>Of course, I was not the totality of the development group. These are my contributions:</p>
-<ul>
-  <li>Initial rendering and lighting</li>
-  <li>Render pass optimizations and mass instancing</li>
-  <li>Program infrastructure and core system design</li>
-  <li>Codebase maintenance and refactoring</li>
-  <li>Procedural world generation</li>
-  <li>Contributions to core software architecture</li>
-  <li>Build system configuration and build automation</li>
-  <li>Music and iconography</li>
-</ul>]]></content><author><name>Sixten Schelin</name><email>sixtensch@gmail.com</email></author><category term="C++" /><category term="Game" /><category term="Engine" /><category term="Team" /><category term="CHSL" /><summary type="html"><![CDATA[A video game and engine built from scratch in six weeks as a university group project]]></summary></entry><entry><title type="html">TOOL</title><link href="http://localhost:4000/2024/10/10/tool.html" rel="alternate" type="text/html" title="TOOL" /><published>2024-10-10T00:00:00+02:00</published><updated>2024-10-10T00:00:00+02:00</updated><id>http://localhost:4000/2024/10/10/tool</id><content type="html" xml:base="http://localhost:4000/2024/10/10/tool.html"><![CDATA[<p>A kitchen sink function-oriented <b>standard library</b> to simplify development and cut compile times in C++ game software.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-10-14T23:14:20+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Developer Portfolio</title><subtitle>My software portfolio.
+</subtitle><author><name>Sixten Schelin</name><email>sixtensch@gmail.com</email></author><entry><title type="html">TOOL</title><link href="http://localhost:4000/2024/10/10/tool.html" rel="alternate" type="text/html" title="TOOL" /><published>2024-10-10T00:00:00+02:00</published><updated>2024-10-10T00:00:00+02:00</updated><id>http://localhost:4000/2024/10/10/tool</id><content type="html" xml:base="http://localhost:4000/2024/10/10/tool.html"><![CDATA[<p>A kitchen sink function-oriented <b>standard library</b> to simplify development and cut compile times in C++ game software.</p>
 
 <!--more-->
 
@@ -55,7 +23,79 @@ TOOL on GitHub
   <li>It simplifies error logging, as functionality is more specific and less templated. The smallest perceivable error in a call to <code class="language-plaintext highlighter-rouge">std::format</code> or <code class="language-plaintext highlighter-rouge">std::regex_search</code> can produce a short novel for you to read through, a waste of time if there ever was one.</li>
   <li>It self-documents the functionality through a legible and digestible interface. Following a <code class="language-plaintext highlighter-rouge">#include &lt;string&gt;</code> link to the source file seldom provides enlightenment on anything. Well-designed code can benefit from, but should not <em>require</em>, extensive commenting or documentation to be comprehensible.</li>
   <li>It breaks down the humongous array of esoteric utilities made available through large modern standard libraries into the most core constituent parts. Performance-oriented programmers often strive to optimize their software and understand its workings, not pray to higher powers that the standard library becomes the bottleneck.</li>
-</ul>]]></content><author><name>Sixten Schelin</name><email>sixtensch@gmail.com</email></author><category term="C++" /><category term="Library" /><category term="TOOL" /><summary type="html"><![CDATA[A kitchen sink function-oriented standard library to simplify development and cut compile times in C++ game software.]]></summary></entry><entry><title type="html">CHSL</title><link href="http://localhost:4000/2024/10/09/chsl.html" rel="alternate" type="text/html" title="CHSL" /><published>2024-10-09T00:00:00+02:00</published><updated>2024-10-09T00:00:00+02:00</updated><id>http://localhost:4000/2024/10/09/chsl</id><content type="html" xml:base="http://localhost:4000/2024/10/09/chsl.html"><![CDATA[<p>An object-oriented <b>standard library</b> consisting of utility classes for various purposes, used by many projects of mine.</p>
+</ul>]]></content><author><name>Sixten Schelin</name><email>sixtensch@gmail.com</email></author><category term="C++" /><category term="Library" /><category term="TOOL" /><summary type="html"><![CDATA[A kitchen sink function-oriented standard library to simplify development and cut compile times in C++ game software.]]></summary></entry><entry><title type="html">Captain Catnip</title><link href="http://localhost:4000/2024/04/19/captain-catnip.html" rel="alternate" type="text/html" title="Captain Catnip" /><published>2024-04-19T00:00:00+02:00</published><updated>2024-04-19T00:00:00+02:00</updated><id>http://localhost:4000/2024/04/19/captain-catnip</id><content type="html" xml:base="http://localhost:4000/2024/04/19/captain-catnip.html"><![CDATA[<p>An infinite game about navigating treacherous water, collecting as much gold as possible, and escaping from the maritime Dog Empire.</p>
+
+<!--more-->
+
+<p><em>Captain Catnip</em> is our submission to ScoreSpace Jam 29, ranking 14th overall out of 139 entries.</p>
+
+<p>The second game jam entry made by me and a friend of mine under the KONGSTRONK name. As with the previous game, our reason for participating is three-fold: grow as game developers, finish more games, and have fun. While I’ve been making games for many years, putting the pressure on each other really helps bring out my enthusiasm for game development.</p>
+
+<p>If you’re on desktop, you can try out the game right in your web browser by following the link!</p>
+
+<iframe frameborder="0" src="https://itch.io/embed/2661979" width="100%" height="167"><a href="https://kongstronk.itch.io/captain-catnip">Captain Catnip by KONGSTRONK</a></iframe>
+
+<hr />
+
+<p>Captain Catnip was made in 72 hours from scratch in Unity. For this game I acted as the main programmer. For this game, we incorporated a number of interesting features to distinguish it from the rest. Besides being one of the few 3D games, we added fun realistically based fluid dynamics for controlling the ship through the water.</p>
+
+<p>Besides procedurally generating the obstacles and pickups in the environment, the geometry for the water and game world itself is generated programmatically as the game runs, continuously building a cylindrical “barrel world” for the ship to move over. This skips any illusions and instead physically represents the horizon and objects appearing over it in the world itself. Through our custom water shading and other tricks, it looks seemless!</p>
+
+<p><img src="/assets/captain-catnip-example-1.jpg" width="80%" style="display:flex; margin-left: auto; margin-right: auto; border-radius: 5%;" /></p>
+
+<p><img src="/assets/captain-catnip-example-2.jpg" width="80%" style="display:flex; margin-left: auto; margin-right: auto; border-radius: 5%;" /></p>]]></content><author><name>Sixten Schelin</name><email>sixtensch@gmail.com</email></author><category term="C#" /><category term="Unity" /><category term="Game" /><category term="Jam" /><category term="Duo" /><summary type="html"><![CDATA[An infinite game about navigating treacherous water, collecting as much gold as possible, and escaping from the maritime Dog Empire.]]></summary></entry><entry><title type="html">Push Hour</title><link href="http://localhost:4000/2024/03/04/push-hour.html" rel="alternate" type="text/html" title="Push Hour" /><published>2024-03-04T00:00:00+01:00</published><updated>2024-03-04T00:00:00+01:00</updated><id>http://localhost:4000/2024/03/04/push-hour</id><content type="html" xml:base="http://localhost:4000/2024/03/04/push-hour.html"><![CDATA[<p>A fun speedrunning game about shoving commuters onto the subway.</p>
+
+<!--more-->
+
+<p><em>Push Hour</em> is our <strong>prize-winning</strong> submission to SpeedJam 4. For the game, we won the <em>streamer’s choice award</em>, becoming one of three winning games for the first section of the 72-hour game jam!</p>
+
+<p>The first game made as part of the the KONGSTRONK project: a game development duo made up of myself and a close friend of mine. The goal of these jams has always been a three-way split: grow as game developers, finish more games, and have fun. While I’ve been making games for many years, putting the pressure on each other really helps bring out my enthusiasm for game development.</p>
+
+<p>If you’re on desktop, you can try out the game right in your web browser by following the link below!</p>
+
+<iframe frameborder="0" src="https://itch.io/embed/2565645" width="100%" height="167"><a href="https://kongstronk.itch.io/push-hour">Push Hour by KONGSTRONK</a></iframe>
+
+<hr />
+
+<p>Push Hour was developed from scratch in 72 hours using the Unity game engine. We both have lots of prior experience using Unity, and for this game I acted as lead programmer. Trying out new techniques and features to distinguish the game, we decided to build a core part of the game on <em>simulated crowd dynamics</em>. Commuters are individual agents and all move with respect to each other. The entire game exists within a one-scene environment, with individual games stopping and starting smoothly without transitions and loading screens: the player gets thrown right into the action.</p>
+
+<p><img src="/assets/push-hour-example-1.png" width="80%" style="display:flex; margin-left: auto; margin-right: auto; border-radius: 5%;" /></p>
+
+<p><img src="/assets/push-hour-example-2.png" width="80%" style="display:flex; margin-left: auto; margin-right: auto; border-radius: 5%;" /></p>]]></content><author><name>Sixten Schelin</name><email>sixtensch@gmail.com</email></author><category term="C#" /><category term="Unity" /><category term="Game" /><category term="Jam" /><category term="Duo" /><summary type="html"><![CDATA[A fun speedrunning game about shoving commuters onto the subway.]]></summary></entry><entry><title type="html">Whisperwoods</title><link href="http://localhost:4000/2023/03/16/whisperwoods.html" rel="alternate" type="text/html" title="Whisperwoods" /><published>2023-03-16T00:00:00+01:00</published><updated>2023-03-16T00:00:00+01:00</updated><id>http://localhost:4000/2023/03/16/whisperwoods</id><content type="html" xml:base="http://localhost:4000/2023/03/16/whisperwoods.html"><![CDATA[<p>A <strong>video game</strong> and <strong>engine</strong> built from scratch in six weeks as a university group project</p>
+
+<!--more-->
+
+<p>Representing the culmination of our first three years in university, Whisperwoods shows off many facets of video game tech, rendering, creative optimization, and software engineering. Developed with little integration of external software libraries, the game features a renderer built from scratch using DirectX 11, custom resource asset formats, procedural world generation, and fast-paced strategic stealth gameplay, all optimized to run smoothly on very rudimentary hardware.</p>
+
+<div style="display: flex; align-items: center; margin-right: 10px;">
+<img src="/assets/github-mark.svg" style="height: 30px; margin-right: 10px;" />
+<a class="button button--secondary button--rounded button--lg" href="https://github.com/sixtensch/Whisperwoods" style="margin-right: 10px;">
+Whisperwoodson GitHub
+</a>
+</div>
+
+<hr />
+
+<div style="width: 80%; margin-left: auto; margin-right: auto;"><div class="extensions extensions--video">
+  <iframe src="https://www.youtube.com/embed/jSfU6uw6qy8?rel=0&amp;showinfo=0" frameborder="0" scrolling="no" allowfullscreen=""></iframe>
+</div>
+</div>
+
+<p>The team, consisting of six developers specialized and interested in different things, synergized to build a fairly well-rounded game engine. The software features and gameplay overview are demonstrated in an early build trailer available on YouTube.</p>
+
+<p>Of course, I was not the totality of the development group. These are my contributions:</p>
+<ul>
+  <li>Initial rendering and lighting</li>
+  <li>Render pass optimizations and mass instancing</li>
+  <li>Program infrastructure and core system design</li>
+  <li>Codebase maintenance and refactoring</li>
+  <li>Procedural world generation</li>
+  <li>Contributions to core software architecture</li>
+  <li>Build system configuration and build automation</li>
+  <li>Music and iconography</li>
+</ul>
+
+<p><img class="image image--lg" src="/assets/whisperwoods-poster.png" style="display: flex; margin-left:auto; margin-right:auto;" /></p>]]></content><author><name>Sixten Schelin</name><email>sixtensch@gmail.com</email></author><category term="C++" /><category term="Game" /><category term="Engine" /><category term="Team" /><category term="CHSL" /><summary type="html"><![CDATA[A video game and engine built from scratch in six weeks as a university group project]]></summary></entry><entry><title type="html">CHSL</title><link href="http://localhost:4000/2023/03/15/chsl.html" rel="alternate" type="text/html" title="CHSL" /><published>2023-03-15T00:00:00+01:00</published><updated>2023-03-15T00:00:00+01:00</updated><id>http://localhost:4000/2023/03/15/chsl</id><content type="html" xml:base="http://localhost:4000/2023/03/15/chsl.html"><![CDATA[<p>An object-oriented <b>standard library</b> consisting of utility classes for various purposes, used by many projects of mine.</p>
 
 <!--more-->
 
