@@ -18,7 +18,7 @@ theme: jekyll-text-theme # Gem-based Jekyll Themes
 ##############################
 text_skin: default # "default" (default), "dark", "forest", "ocean", "chocolate", "orange"
 highlight_theme: tomorrow-night-eighties # "default" (default), "tomorrow", "tomorrow-night", "tomorrow-night-eighties", "tomorrow-night-blue", "tomorrow-night-bright"
-url     : https://www.crazysissen.github.io # the base hostname & protocol for your site e.g. https://www.someone.com
+url     : https://www.sixtensch.github.io # the base hostname & protocol for your site e.g. https://www.someone.com
 baseurl : # does not include hostname
 title   : Developer Portfolio
 header_title: "<b>Sixten Schelin</b>"
@@ -52,13 +52,13 @@ author:
   zhihu     : # "user_name" the last part of your profile url, e.g. https://www.zhihu.com/people/user_name
   douban    : # "user_name" the last part of your profile url, e.g. https://www.douban.com/people/user_name
   linkedin  : sixten-schelin # "user_name" the last part of your profile url, e.g. https://www.linkedin.com/in/user_name
-  github    : crazysissen # "user_name" the last part of your profile url, e.g. https://github.com/user_name
+  github    : sixtensch # "user_name" the last part of your profile url, e.g. https://github.com/user_name
   npm       : # "user_name" the last part of your profile url, e.g. https://www.npmjs.com/~user_name
 
 
 ## => GitHub Repository (if the site is hosted by GitHub)
 ##############################
-repository: crazysissen/crazysissen.github.io
+repository: sixtensch/sixtensch.github.io
 repository_tree: main
 
 

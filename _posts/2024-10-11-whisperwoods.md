@@ -13,7 +13,7 @@ Representing the culmination of our first three years in university, Whisperwood
 <div style="display: flex; align-items: center; margin-right: 10px;">
 <img src="/assets/github-mark.svg" style="height: 30px; margin-right: 10px;"/>
 <a class="button button--secondary button--rounded button--lg" href="https://github.com/sixtensch/Whisperwoods" style="margin-right: 10px;">
-Whisperwoods on GitHub
+<b>Whisperwoods</b> on GitHub
 </a>
 </div>
 
