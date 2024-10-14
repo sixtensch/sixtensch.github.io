@@ -8,7 +8,7 @@ These projects should be included
 - SandFox
 - MoonFox
 - Projectr
-- Compute communication
+- Computer communication
     - Web server
     - TCP and UDP basic servers and clients
 - CUDA neural network

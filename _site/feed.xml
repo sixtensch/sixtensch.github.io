@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-10-14T23:14:20+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Developer Portfolio</title><subtitle>My software portfolio.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-10-15T01:56:57+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Developer Portfolio</title><subtitle>My software portfolio.
 </subtitle><author><name>Sixten Schelin</name><email>sixtensch@gmail.com</email></author><entry><title type="html">TOOL</title><link href="http://localhost:4000/2024/10/10/tool.html" rel="alternate" type="text/html" title="TOOL" /><published>2024-10-10T00:00:00+02:00</published><updated>2024-10-10T00:00:00+02:00</updated><id>http://localhost:4000/2024/10/10/tool</id><content type="html" xml:base="http://localhost:4000/2024/10/10/tool.html"><![CDATA[<p>A kitchen sink function-oriented <b>standard library</b> to simplify development and cut compile times in C++ game software.</p>
 
 <!--more-->
@@ -43,7 +43,100 @@ TOOL on GitHub
 
 <p><img src="/assets/captain-catnip-example-1.jpg" width="80%" style="display:flex; margin-left: auto; margin-right: auto; border-radius: 5%;" /></p>
 
-<p><img src="/assets/captain-catnip-example-2.jpg" width="80%" style="display:flex; margin-left: auto; margin-right: auto; border-radius: 5%;" /></p>]]></content><author><name>Sixten Schelin</name><email>sixtensch@gmail.com</email></author><category term="C#" /><category term="Unity" /><category term="Game" /><category term="Jam" /><category term="Duo" /><summary type="html"><![CDATA[An infinite game about navigating treacherous water, collecting as much gold as possible, and escaping from the maritime Dog Empire.]]></summary></entry><entry><title type="html">Push Hour</title><link href="http://localhost:4000/2024/03/04/push-hour.html" rel="alternate" type="text/html" title="Push Hour" /><published>2024-03-04T00:00:00+01:00</published><updated>2024-03-04T00:00:00+01:00</updated><id>http://localhost:4000/2024/03/04/push-hour</id><content type="html" xml:base="http://localhost:4000/2024/03/04/push-hour.html"><![CDATA[<p>A fun speedrunning game about shoving commuters onto the subway.</p>
+<p><img src="/assets/captain-catnip-example-2.jpg" width="80%" style="display:flex; margin-left: auto; margin-right: auto; border-radius: 5%;" /></p>]]></content><author><name>Sixten Schelin</name><email>sixtensch@gmail.com</email></author><category term="C#" /><category term="Unity" /><category term="Game" /><category term="Jam" /><category term="Duo" /><summary type="html"><![CDATA[An infinite game about navigating treacherous water, collecting as much gold as possible, and escaping from the maritime Dog Empire.]]></summary></entry><entry><title type="html">FastNeurons</title><link href="http://localhost:4000/2024/03/22/fast-neurons.html" rel="alternate" type="text/html" title="FastNeurons" /><published>2024-03-22T00:00:00+01:00</published><updated>2024-03-22T00:00:00+01:00</updated><id>http://localhost:4000/2024/03/22/fast-neurons</id><content type="html" xml:base="http://localhost:4000/2024/03/22/fast-neurons.html"><![CDATA[<p>A blazing fast CUDA-parallelized library for neural networks and machine learning. Highly optimized while maintaining a flexible API.</p>
+
+<!--more-->
+
+<p>The <em>FastNeurons</em> neural network library is centered around training performance above all else. When comparing with a popular sequential LeNet5 C implementation, training and testing over the MNIST handwritten digit datagbase, FastNeurons manages a speedup of more than <strong>100x</strong>.</p>
+
+<div style="display: flex; align-items: center; margin-right: 10px;">
+<img src="/assets/github-mark.svg" style="height: 30px; margin-right: 10px;" />
+<a class="button button--secondary button--rounded button--lg" href="https://github.com/sixtensch/FastNeurons" style="margin-right: 10px;">
+FastNeurons on GitHub
+</a>
+</div>
+
+<hr />
+
+<p>Below you’ll find a comparison of two LeNet5-esque neural network training sequences (using MNIST), showing first FastNeurons, then an equivalent sequential CPU implementation available <a href="https://github.com/fan-wenjie/LeNet-5">here</a>.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Parallel version:
+
+Train average 1:	3.751 seconds
+Train average 2:	4.073 seconds
+Train average 3:	3.732 seconds
+Train average 4:	3.688 seconds
+
+Test time 1:		1.062 seconds
+Test time 2:		1.121 seconds
+Test time 3:		0.915 seconds
+Test time 4:		0.945 seconds
+
+               Predicted label
+               0     1     2     3     4     5     6     7     8     9     Total
+----------------------------------------------------------------------
+True label
+         0   970     0     2     0     0     0     4     1     3     0       980
+         1     0  1125     0     4     0     0     3     0     3     0      1135
+         2    11     7   969     9     5     1     5    10    15     0      1032
+         3     2     0     4   970     1    13     0    11     6     3      1010
+         4     0     0     1     1   958     0     8     0     2    12       982
+         5     6     1     0     9     1   862     2     1     6     4       892
+         6     9     3     0     1     4     5   931     0     5     0       958
+         7     2    12    17     4     0     1     0   950     2    40      1028
+         8    10     4     1     7    10     3     2     7   915    15       974
+         9    10     6     0     5    17     7     0     4     7   953      1009
+----------------------------------------------------------------------
+                                Total number of input images tested =      10000
+----------------------------------------------------------------------
+
+Correct guesses: 9603 / 10000 (96.0300%)
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Sequential version:
+
+Total 1:	424 seconds
+Total 2:	420.54 seconds
+
+               Predicted label
+               0     1     2     3     4     5     6     7     8     9     Total
+----------------------------------------------------------------------
+True label
+         0   971     0     1     0     0     1     3     1     3     0       980
+         1     0  1122     1     3     1     0     1     0     7     0      1135
+         2    10     2   989     2     5     0     5     9    10     0      1032
+         3     1     3    12   949     0    21     0    11    12     1      1010
+         4     1     2     1     0   961     0     6     1     2     8       982
+         5     4     3     0     2     0   872     3     1     5     2       892
+         6    10     4     2     1     4     3   930     0     4     0       958
+         7     1    11    22     1     3     0     0   978     2    10      1028
+         8     7     4     2     3     7     4     1     4   938     4       974
+         9     9     8     0     3    27     9     1     7    10   935      1009
+----------------------------------------------------------------------
+                                Total number of input images tested =      10000
+----------------------------------------------------------------------
+Testing: Correct predictions = 9645 (96.45%)
+</code></pre></div></div>
+
+<p>When training over multiple epochs, this classic convolutional neural network design can achieve accuracy of over 99%! While this is one possible network using the library, a developer could build any other design incorporating fully connected, pooling, and convolutional layers. Below you’ll find a code snippet showing how LeNet5 is implemented using FastNeurons.</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">void</span> <span class="nf">NetworkCreateLeNet5</span><span class="p">(</span><span class="n">Network</span><span class="o">*</span> <span class="n">network</span><span class="p">)</span>
+<span class="p">{</span>
+	<span class="k">const</span> <span class="kt">int</span> <span class="n">kernelWidth</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>
+    
+	<span class="n">NetworkCreate</span><span class="p">(</span><span class="n">network</span><span class="p">,</span> <span class="mi">8</span><span class="p">);</span>
+    
+	<span class="c1">// Add the layers</span>
+	<span class="n">NetworkAddLayerInput2D</span><span class="p">(</span><span class="n">network</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">28</span><span class="p">,</span> <span class="mi">28</span><span class="p">,</span> <span class="mi">4</span><span class="p">);</span>
+	<span class="n">NetworkAddLayerConvolution2D</span><span class="p">(</span><span class="n">network</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="n">kernelWidth</span><span class="p">,</span> <span class="n">ActivationTypeReLU</span><span class="p">);</span>
+	<span class="n">NetworkAddLayerPooling2D</span><span class="p">(</span><span class="n">network</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">PoolingTypeMax</span><span class="p">);</span>
+	<span class="n">NetworkAddLayerConvolution2D</span><span class="p">(</span><span class="n">network</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="n">kernelWidth</span><span class="p">,</span> <span class="n">ActivationTypeReLU</span><span class="p">);</span>
+	<span class="n">NetworkAddLayerPooling2D</span><span class="p">(</span><span class="n">network</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">PoolingTypeMax</span><span class="p">);</span>
+	<span class="n">NetworkAddLayerFullyConnected</span><span class="p">(</span><span class="n">network</span><span class="p">,</span> <span class="mi">120</span><span class="p">,</span> <span class="n">ActivationTypeReLU</span><span class="p">);</span>
+	<span class="n">NetworkAddLayerFullyConnected</span><span class="p">(</span><span class="n">network</span><span class="p">,</span> <span class="mi">84</span><span class="p">,</span> <span class="n">ActivationTypeReLU</span><span class="p">);</span>
+	<span class="n">NetworkAddLayerFullyConnected</span><span class="p">(</span><span class="n">network</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="n">ActivationTypeReLU</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>]]></content><author><name>Sixten Schelin</name><email>sixtensch@gmail.com</email></author><category term="C++" /><category term="CUDA" /><category term="Library" /><summary type="html"><![CDATA[A blazing fast CUDA-parallelized library for neural networks and machine learning. Highly optimized while maintaining a flexible API.]]></summary></entry><entry><title type="html">Push Hour</title><link href="http://localhost:4000/2024/03/04/push-hour.html" rel="alternate" type="text/html" title="Push Hour" /><published>2024-03-04T00:00:00+01:00</published><updated>2024-03-04T00:00:00+01:00</updated><id>http://localhost:4000/2024/03/04/push-hour</id><content type="html" xml:base="http://localhost:4000/2024/03/04/push-hour.html"><![CDATA[<p>A fun speedrunning game about shoving commuters onto the subway.</p>
 
 <!--more-->
 
