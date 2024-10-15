@@ -6,7 +6,13 @@ key: page-about
 
 **Hi!** My name's *Sixten*.
 
-Browsing this website, you'll find my developer portfolio along with all the important links. Keep reading if you'd like to learn a little more about me: this is my cover letter.
+Browsing this website, you'll find my developer portfolio along with all the important links. You can download my CV by following the link below. Keep reading if you'd like to learn a little more about me: this is my cover letter.
+
+<div style="display: flex; align-items: center; margin-right: 10px;">
+<a class="button button--secondary button--rounded button--lg" href="/attachments/Sixten-Schelin-CV.pdf" style="margin-right: 10px;">
+<small>Download my</small> CV
+</a>
+</div>
 
 ---
 
@@ -14,7 +20,7 @@ I’m an upbeat, motivated, analytical, and result-oriented student at the *Blek
 
 Outside of work, I dedicate much of my time to learning and honing various skills, along with a great interest in various geeky hobbies—tabletop RPGs, card games, and small game development projects with friends.
 
-<img class="image image--md" style="display: block; margin-left: auto; margin-right: auto; border-radius: 25%; box-shadow: 4px 4px 5px #00004060; margin-bottom: 30px; margin-top: 30px;" src="/assets/jiji.png"/>
+<img class="image image--md" style="display: block; margin-left: auto; margin-right: auto; border-radius: 25%; box-shadow: 4px 4px 5px #00004060; margin-bottom: 30px; margin-top: 30px;" src="/assets/sixten.jpg"/>
 
 In all aspects of life, I find the flames of enthusiasm, dedication, and ambition to be my personal core. These traits have driven me to continuously learn and improve, which has always been an integral part of who I am. As a teenager, I found working at a local family restaurant incredibly rewarding, and even though the pay itself never impressed I found the challenge and the experience offered in and of themselves worth it.
 
