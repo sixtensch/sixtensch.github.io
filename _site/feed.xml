@@ -1,5 +1,40 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-11-22T00:28:28+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Developer Portfolio</title><subtitle>My software portfolio.
-</subtitle><author><name>Sixten Schelin</name><email>sixtensch@gmail.com</email></author><entry><title type="html">TOOL</title><link href="http://localhost:4000/2024/10/10/tool.html" rel="alternate" type="text/html" title="TOOL" /><published>2024-10-10T00:00:00+02:00</published><updated>2024-10-10T00:00:00+02:00</updated><id>http://localhost:4000/2024/10/10/tool</id><content type="html" xml:base="http://localhost:4000/2024/10/10/tool.html"><![CDATA[<p>A kitchen sink function-oriented <b>standard library</b> to simplify development and cut compile times in C++ game software.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-12-10T20:08:36+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Developer Portfolio</title><subtitle>My software portfolio.
+</subtitle><author><name>Sixten Schelin</name><email>sixtensch@gmail.com</email></author><entry><title type="html">Tinker Tails</title><link href="http://localhost:4000/2024/12/10/tinker-tails.html" rel="alternate" type="text/html" title="Tinker Tails" /><published>2024-12-10T00:00:00+01:00</published><updated>2024-12-10T00:00:00+01:00</updated><id>http://localhost:4000/2024/12/10/tinker-tails</id><content type="html" xml:base="http://localhost:4000/2024/12/10/tinker-tails.html"><![CDATA[<p>A fast-paced multiplayer team action game about building airships! <strong>Whole program</strong> built from scratch in 14 weeks.</p>
+
+<!--more-->
+
+<p>Tinker Tails marks the apex of our university programme, second only to the research thesis itself. The game, along with the engine, has been built from scratch using agile/scrum methodology in a team of 12 developers. All engine development, networking, architecture, devops, resource management, gameplay scripting, and art/music was done in-house.</p>
+
+<hr />
+
+<!-- <div style="width: 80%; margin-left: auto; margin-right: auto;"><div class="extensions extensions--video">
+  <iframe src="https://www.youtube.com/embed/jSfU6uw6qy8?rel=0&showinfo=0"
+    frameborder="0" scrolling="no" allowfullscreen></iframe>
+</div>
+</div> -->
+
+<p>The program is built in two main layers: a game engine programmed in C++, along with the game itself developed entirely in LUA. The engine works off of an entity-component system and powers a completely custom and extensive scripting interface for gameplay development.</p>
+
+<p>One of my largest contributions was the <em>resource precompiler</em>, and <em>resource manager</em> system. The precompiler is an external utility for managing assets and compiling/preprocessing asset binaries from raw asset files. It operates a chain of loading and packing operations for each file, where the artist has the option to configure settings for each asset regarding compression and formatting. This system is fully multithreaded and works on many files at once. Metaresources referencing eachother and bunching assets into materials, or whatever else, are also a core feature. The asset binary is shipped with the game alongside a metadata file on how to read it. The resource <em>manager</em> system in the live applicaiton opens and tracks all resources, both synchronously and asynchronously during the course of the game.</p>
+
+<p><img src="/assets/resource-precompiler.png" width="60%" style="display:flex; margin-left: auto; margin-right: auto; border-radius: 5%;" /></p>
+
+<p>These are my other contributions to the project:</p>
+<ul>
+  <li>Cloud volumetrics.</li>
+  <li>Debugging and logging systems.</li>
+  <li>Argument handling.</li>
+  <li>TOOL, the standard library. Read more about it <a href="https://sixtensch.github.io/2024/10/10/tool.html">here.</a></li>
+  <li>TOON, another library for noise generation.</li>
+  <li>Many gameplay systems.</li>
+  <li>Devops and build automation. I set up submodules for asset handling and custom GitLab hosting on a teammate’s home server.</li>
+  <li>Lots of work regarding engine architecture and system design.</li>
+  <li>Responsible for game and gameplay systems architecture.</li>
+  <li>Codebase maintenance and refactoring.</li>
+  <li>Music and iconography.</li>
+</ul>
+
+<p><img class="image image--lg" src="/assets/tinker-tails-poster.jpg" style="display: flex; margin-left:auto; margin-right:auto;" /></p>]]></content><author><name>Sixten Schelin</name><email>sixtensch@gmail.com</email></author><category term="C++" /><category term="Game" /><category term="Engine" /><category term="Team" /><category term="TOOL" /><summary type="html"><![CDATA[A fast-paced multiplayer team action game about building airships! Whole program built from scratch in 14 weeks.]]></summary></entry><entry><title type="html">TOOL</title><link href="http://localhost:4000/2024/10/10/tool.html" rel="alternate" type="text/html" title="TOOL" /><published>2024-10-10T00:00:00+02:00</published><updated>2024-10-10T00:00:00+02:00</updated><id>http://localhost:4000/2024/10/10/tool</id><content type="html" xml:base="http://localhost:4000/2024/10/10/tool.html"><![CDATA[<p>A kitchen sink function-oriented <b>standard library</b> to simplify development and cut compile times in C++ game software.</p>
 
 <!--more-->
 
