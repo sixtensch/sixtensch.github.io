@@ -6,13 +6,13 @@ key: page-about
 
 **Hi!** My name's *Sixten*.
 
-Browsing this website, you'll find my developer portfolio along with all the important links. You can download my CV by following the link below. Keep reading if you'd like to learn a little more about me!
+Browsing this website, you'll find my developer portfolio along with all the important links. Keep reading if you'd like to learn a little more about me!
 
-<div style="display: flex; align-items: center; margin-right: 10px;">
+<!-- <div style="display: flex; align-items: center; margin-right: 10px;">
 <a class="button button--secondary button--rounded button--lg" href="/attachments/Sixten-Schelin-CV.pdf" style="margin-right: 10px;">
 <small>Download my</small> CV
 </a>
-</div>
+</div> -->
 
 ---
 
